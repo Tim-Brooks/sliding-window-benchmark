@@ -1,0 +1,138 @@
+# JMH 1.10 (released 9 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/bin/java
+# VM options: -Didea.launcher.port=7548 -Didea.launcher.bin.path=/Applications/IntelliJ IDEA 14 CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 6 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: net.uncontended.PrecipiceBenchmark.testIncrement
+
+# Run progress: 0.00% complete, ETA 00:01:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 87.688 ±(99.9%) 2.679 ns/op
+# Warmup Iteration   2: 73.911 ±(99.9%) 1.347 ns/op
+# Warmup Iteration   3: 76.761 ±(99.9%) 2.688 ns/op
+# Warmup Iteration   4: 75.249 ±(99.9%) 2.661 ns/op
+# Warmup Iteration   5: 77.303 ±(99.9%) 3.323 ns/op
+# Warmup Iteration   6: 74.777 ±(99.9%) 3.439 ns/op
+# Warmup Iteration   7: 76.483 ±(99.9%) 1.482 ns/op
+# Warmup Iteration   8: 74.671 ±(99.9%) 2.859 ns/op
+# Warmup Iteration   9: 78.398 ±(99.9%) 2.013 ns/op
+# Warmup Iteration  10: 77.243 ±(99.9%) 1.688 ns/op
+# Warmup Iteration  11: 76.348 ±(99.9%) 1.377 ns/op
+# Warmup Iteration  12: 79.421 ±(99.9%) 2.278 ns/op
+# Warmup Iteration  13: 77.396 ±(99.9%) 2.230 ns/op
+# Warmup Iteration  14: 76.754 ±(99.9%) 0.856 ns/op
+# Warmup Iteration  15: 76.086 ±(99.9%) 2.240 ns/op
+# Warmup Iteration  16: 78.566 ±(99.9%) 3.247 ns/op
+# Warmup Iteration  17: 77.031 ±(99.9%) 1.286 ns/op
+# Warmup Iteration  18: 74.391 ±(99.9%) 1.663 ns/op
+# Warmup Iteration  19: 76.868 ±(99.9%) 2.070 ns/op
+# Warmup Iteration  20: 74.482 ±(99.9%) 1.842 ns/op
+Iteration   1: 78.218 ±(99.9%) 1.976 ns/op
+Iteration   2: 75.054 ±(99.9%) 1.701 ns/op
+Iteration   3: 77.220 ±(99.9%) 1.465 ns/op
+Iteration   4: 75.714 ±(99.9%) 4.055 ns/op
+Iteration   5: 77.329 ±(99.9%) 2.544 ns/op
+Iteration   6: 79.199 ±(99.9%) 3.129 ns/op
+Iteration   7: 75.938 ±(99.9%) 3.439 ns/op
+Iteration   8: 77.609 ±(99.9%) 2.880 ns/op
+Iteration   9: 74.085 ±(99.9%) 0.859 ns/op
+Iteration  10: 80.350 ±(99.9%) 1.134 ns/op
+Iteration  11: 75.583 ±(99.9%) 2.544 ns/op
+Iteration  12: 76.728 ±(99.9%) 1.306 ns/op
+Iteration  13: 76.094 ±(99.9%) 4.867 ns/op
+Iteration  14: 78.432 ±(99.9%) 2.346 ns/op
+Iteration  15: 77.573 ±(99.9%) 3.879 ns/op
+Iteration  16: 76.850 ±(99.9%) 0.902 ns/op
+Iteration  17: 76.990 ±(99.9%) 2.029 ns/op
+Iteration  18: 75.987 ±(99.9%) 1.933 ns/op
+Iteration  19: 76.865 ±(99.9%) 2.304 ns/op
+Iteration  20: 74.440 ±(99.9%) 1.576 ns/op
+
+
+Result "testIncrement":
+  76.813 ±(99.9%) 1.341 ns/op [Average]
+  (min, avg, max) = (74.085, 76.813, 80.350), stdev = 1.545
+  CI (99.9%): [75.472, 78.154] (assumes normal distribution)
+
+
+# JMH 1.10 (released 9 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/bin/java
+# VM options: -Didea.launcher.port=7548 -Didea.launcher.bin.path=/Applications/IntelliJ IDEA 14 CE.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 6 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: net.uncontended.PrecipiceBenchmark.testIncrement
+
+# Run progress: 50.00% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: n = 143526, mean = 340 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 7, 156, 177, 531, 2055, 11720, 149449, 1468416 ns/op
+# Warmup Iteration   2: n = 66308, mean = 201 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 95, 161, 175, 182, 431, 1265, 8873, 2383872 ns/op
+# Warmup Iteration   3: n = 72601, mean = 155 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 93, 156, 166, 173, 190, 325, 7136, 9888 ns/op
+# Warmup Iteration   4: n = 69042, mean = 159 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 96, 160, 173, 178, 189, 927, 3681, 8864 ns/op
+# Warmup Iteration   5: n = 68648, mean = 161 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 101, 161, 177, 180, 190, 246, 3208, 45632 ns/op
+# Warmup Iteration   6: n = 67690, mean = 192 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 93, 161, 176, 180, 190, 990, 3211, 2097152 ns/op
+# Warmup Iteration   7: n = 70161, mean = 158 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 38, 161, 176, 181, 190, 236, 513, 890 ns/op
+# Warmup Iteration   8: n = 67864, mean = 160 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 105, 160, 176, 181, 191, 965, 2733, 14640 ns/op
+# Warmup Iteration   9: n = 69276, mean = 160 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 102, 160, 174, 179, 189, 900, 3468, 8880 ns/op
+# Warmup Iteration  10: n = 70802, mean = 158 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 88, 160, 175, 180, 190, 234, 861, 14736 ns/op
+# Warmup Iteration  11: n = 67842, mean = 165 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 100, 163, 179, 184, 193, 959, 8819, 59904 ns/op
+# Warmup Iteration  12: n = 69345, mean = 158 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 97, 160, 175, 179, 188, 249, 880, 43648 ns/op
+# Warmup Iteration  13: n = 68989, mean = 160 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 98, 161, 174, 180, 191, 925, 2370, 8016 ns/op
+# Warmup Iteration  14: n = 70247, mean = 160 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 100, 161, 175, 182, 189, 233, 3532, 14656 ns/op
+# Warmup Iteration  15: n = 67239, mean = 164 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 97, 161, 176, 182, 191, 961, 5428, 150272 ns/op
+# Warmup Iteration  16: n = 68174, mean = 161 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 97, 162, 180, 186, 196, 234, 999, 9072 ns/op
+# Warmup Iteration  17: n = 67989, mean = 161 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 66, 160, 174, 182, 191, 893, 2512, 9984 ns/op
+# Warmup Iteration  18: n = 68261, mean = 162 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 100, 161, 176, 182, 191, 959, 2345, 62016 ns/op
+# Warmup Iteration  19: n = 69707, mean = 159 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 101, 161, 176, 182, 190, 224, 570, 6464 ns/op
+# Warmup Iteration  20: n = 66236, mean = 164 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 96, 162, 180, 185, 194, 1012, 6286, 9136 ns/op
+Iteration   1: n = 68029, mean = 162 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 100, 163, 180, 185, 193, 260, 2967, 24096 ns/op
+Iteration   2: n = 65802, mean = 165 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 98, 162, 182, 186, 197, 884, 8914, 14768 ns/op
+Iteration   3: n = 66300, mean = 166 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 103, 166, 186, 190, 197, 240, 1563, 12096 ns/op
+Iteration   4: n = 64938, mean = 200 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 100, 163, 182, 187, 197, 931, 1913, 2293760 ns/op
+Iteration   5: n = 67747, mean = 163 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 90, 162, 179, 185, 199, 288, 9030, 83328 ns/op
+Iteration   6: n = 67316, mean = 164 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 39, 162, 178, 185, 204, 1012, 4921, 24640 ns/op
+Iteration   7: n = 67539, mean = 162 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 98, 161, 175, 180, 191, 973, 3280, 80640 ns/op
+Iteration   8: n = 69531, mean = 173 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 97, 162, 177, 183, 191, 227, 633, 888832 ns/op
+Iteration   9: n = 67326, mean = 164 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 100, 162, 178, 185, 196, 925, 8942, 12720 ns/op
+Iteration  10: n = 68174, mean = 164 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 99, 164, 181, 186, 195, 249, 8915, 32832 ns/op
+Iteration  11: n = 66506, mean = 164 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 101, 163, 180, 185, 197, 1004, 5956, 39232 ns/op
+Iteration  12: n = 68396, mean = 161 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 86, 161, 179, 184, 193, 228, 1734, 11072 ns/op
+Iteration  13: n = 66395, mean = 164 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 102, 162, 179, 185, 197, 979, 6481, 16672 ns/op
+Iteration  14: n = 68027, mean = 170 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 97, 162, 180, 185, 193, 229, 4331, 572416 ns/op
+Iteration  15: n = 67752, mean = 162 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 99, 162, 177, 183, 195, 995, 3149, 9104 ns/op
+Iteration  16: n = 67116, mean = 164 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 101, 163, 182, 186, 198, 932, 2789, 12176 ns/op
+Iteration  17: n = 69472, mean = 164 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 104, 165, 182, 187, 196, 249, 9057, 16112 ns/op
+Iteration  18: n = 66702, mean = 165 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 99, 165, 181, 187, 199, 920, 2499, 10528 ns/op
+Iteration  19: n = 69204, mean = 175 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 104, 162, 177, 182, 192, 241, 4471, 1013760 ns/op
+Iteration  20: n = 67029, mean = 163 ns/op, p{0.00, 0.50, 0.90, 0.95, 0.99, 0.999, 0.9999, 1.00} = 93, 162, 178, 185, 200, 988, 5648, 18656 ns/op
+
+
+Result "testIncrement":
+  166.700 ±(99.9%) 6.650 ns/op [Average]
+  (min, avg, max) = (39.000, 166.700, 2293760.000), stdev = 2347.643
+  CI (99.9%): [160.050, 173.351] (assumes normal distribution)
+  Samples, N = 1349301
+        mean =    166.700 ±(99.9%) 6.650 ns/op
+         min =     39.000 ns/op
+  p( 0.0000) =     39.000 ns/op
+  p(50.0000) =    162.000 ns/op
+  p(90.0000) =    180.000 ns/op
+  p(95.0000) =    186.000 ns/op
+  p(99.0000) =    196.000 ns/op
+  p(99.9000) =    759.000 ns/op
+  p(99.9900) =   3964.279 ns/op
+  p(99.9990) =  17515.615 ns/op
+  p(99.9999) = 1846653.440 ns/op
+         max = 2293760.000 ns/op
+
+
+# Run complete. Total time: 00:01:21
+
+Benchmark                           Mode      Cnt    Score   Error  Units
+PrecipiceBenchmark.testIncrement    avgt       20   76.813 ± 1.341  ns/op
+PrecipiceBenchmark.testIncrement  sample  1349301  166.700 ± 6.650  ns/op
